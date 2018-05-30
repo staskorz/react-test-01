@@ -1,4 +1,6 @@
 import React from "react";
 import "./App.css";
+import contacts from "./data/contacts";
+import ContactTree from "./components/ContactTree";
 
-export default () => <div>Empty React App</div>;
+export default () => <ContactTree contacts={contacts} />;
