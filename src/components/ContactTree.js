@@ -1,8 +1,9 @@
 import React from "react";
+import Group from "./Group";
 
 export default ({ contacts }) => (
   <div>
     <h1>Contact Tree</h1>
-    Empty contact tree
+    <Group contacts={contacts} depth={0} />
   </div>
 );
