@@ -4,7 +4,9 @@ const isSelected = (id, selectedItemId) => id === selectedItemId;
 
 export default ({ id, name, selectedItemId, onClick }) => (
   <div
-    className={isSelected(id, selectedItemId) ? "selected" : null}
+    className={
+      "clickable-name" + (isSelected(id, selectedItemId) ? " selected" : "")
+    }
     onClick={onClick}
   >
     {name}
