@@ -1,3 +1,4 @@
 import React from "react";
+import ClickableName from "./ClickableName";
 
-export default ({ id, name }) => <div>{name}</div>;
+export default props => <ClickableName {...props} />;
